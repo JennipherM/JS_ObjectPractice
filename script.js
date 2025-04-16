@@ -1,4 +1,4 @@
-//Object constructors  (function constructor)
+      //Object constructors  (function constructor)
 
 //object named Person -- first, last, age, eye are properties 
 
@@ -19,3 +19,22 @@ function Person(first, last, age, eye) {
 
   document.getElementById("demo").innerHTML = myFather.firstName + " is " + myFather.age + " years old.";
     //John is 50 years old.
+
+
+      //Object Methods
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  //object method (still as a name:value pair)
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+//Access an object method --- objectName.methodName()
+
+name = person.fullName();
+  // John Doe
+
